@@ -76,8 +76,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "SS Boss Cloud Snail Prototype",
-    "path": "SS Boss Cloud Snail Prototype.yyp",
+    "name": "Phys",
+    "path": "Phys.yyp",
   },
   "resourceVersion": "1.0",
   "name": "rm_main",

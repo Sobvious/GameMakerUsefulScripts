@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SS Boss Cloud Snail Prototype",
-    "path": "SS Boss Cloud Snail Prototype.yyp",
+    "name": "Phys",
+    "path": "Phys.yyp",
   },
   "resourceVersion": "1.0",
   "name": "obj_snail_up",

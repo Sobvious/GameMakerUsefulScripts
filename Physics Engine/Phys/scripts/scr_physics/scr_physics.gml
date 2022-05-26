@@ -1,5 +1,5 @@
 #macro gGravity global.gravity_pixel
-gGravity = 1000.0;
+gGravity = 1000.0/2.0;
 
 function Gravity() constructor {
 	
@@ -58,10 +58,12 @@ function Gravity() constructor {
 		];
 	}
 
-	function Place(deltaTime) {
+	function PlaceUp(deltaTime) {
 		m_ground = noone;
+		var _collis_ins = collision_line(m_object.x, m_object.y, m_object.x, m_object.y + m_displacement[1], m_collisObj, 1, 0);
 		var _is_collis = (m_velocity[1] >= 0.0) 
-		&& (collision_line(m_object.x, m_object.y, m_object.x, m_object.y + m_displacement[1], m_collisObj, 1, 0));
+		&& (_collis_ins != noone)
+		&& (_collis_ins.y >= m_object.y);
 		if _is_collis {
 			m_ground = noone;
 			m_velocity[1] = 0.0;
@@ -70,20 +72,21 @@ function Gravity() constructor {
 			while true {
 				m_ground = collision_point(m_object.x, m_object.y, m_collisObj, 1, 0);
 				if instance_exists(m_ground) {
-					break; 
-				}
+					break; 			}
 				m_object.y++;
 			}
 			while true {
 				if!collision_point(m_object.x, m_object.y, m_collisObj, 1, 0) { 
 					m_object.y ++;
-					break; 
+					break;
 				}
 				m_object.y--;
 			}
+			m_object.y = floor(m_object.y);
 		}
 		m_object.x += m_displacement[0];
 		m_object.y += m_displacement[1];
+		
 	}
 	
 	function Process(deltaTime) {
@@ -91,7 +94,7 @@ function Gravity() constructor {
 		GenerateNextVelocity();
 		Friction(deltaTime);
 		GenerateDisplacement(deltaTime);
-		Place(deltaTime);
+		PlaceUp(deltaTime);
 	}
 	
 	function Destroy() {

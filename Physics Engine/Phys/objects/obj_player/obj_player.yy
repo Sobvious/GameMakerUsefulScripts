@@ -34,8 +34,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Samples",
-    "path": "folders/Platformer Physics/Samples.yy",
+    "name": "Phys",
+    "path": "Phys.yyp",
   },
   "resourceVersion": "1.0",
   "name": "obj_player",

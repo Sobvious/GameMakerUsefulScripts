@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":7,},
+    {"id":{"name":"scr_phys","path":"scripts/scr_phys/scr_phys.yy",},"order":10,},
     {"id":{"name":"obj_snail_down","path":"objects/obj_snail_down/obj_snail_down.yy",},"order":2,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":3,},
     {"id":{"name":"spr_cloud","path":"sprites/spr_cloud/spr_cloud.yy",},"order":8,},
@@ -44,7 +45,7 @@
     "IDEVersion": "2022.3.0.625",
   },
   "resourceVersion": "1.5",
-  "name": "SS Boss Cloud Snail Prototype",
+  "name": "Phys",
   "tags": [],
   "resourceType": "GMProject",
 }
