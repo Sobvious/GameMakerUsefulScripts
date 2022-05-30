@@ -6,7 +6,7 @@
     "path": "Phys.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "scr_phys",
+  "name": "scr_physObj",
   "tags": [],
   "resourceType": "GMScript",
 }
