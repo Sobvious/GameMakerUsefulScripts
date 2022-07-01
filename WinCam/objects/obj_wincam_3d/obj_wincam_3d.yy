@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_texture",
+    "path": "sprites/spr_texture/spr_texture.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -30,7 +33,7 @@
     "path": "WinCam.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "obj_winCam",
+  "name": "obj_winCam_3D",
   "tags": [],
   "resourceType": "GMObject",
 }
