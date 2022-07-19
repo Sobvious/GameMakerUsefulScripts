@@ -1,0 +1,13 @@
+Right arrow 누를 시 화면이 휘는 에러->해결
+
+Facing Direction이 실제 보는 방향이 맞는지->해결
+
+여전히 Yaw, Pitch에 오류있음->해결
+
+MathD3DXVec3TransformCoord 오류->해결
+
+Orbit/Landscape Camera에 따라 Pitch, Yaw 등등 다르게 제작하기
+
+HFOV방식
+
+모델 로드
